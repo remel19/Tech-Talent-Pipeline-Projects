@@ -1,0 +1,28 @@
+<!-- Create an HTML page with a large element on the page that says "Don't hover over me" inside of it. When you hover over the element, send an alert to the user that says, "Hey, I told you not to hover over me!" -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Don't Hover</title>
+  </head>
+
+
+  <body>
+
+    <div style="position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);">
+
+      <h1 id="head"
+      style="font-size:55px;"
+      onmouseover='alert("Hey, I told you not to hover over me!")';>Don't hover over me</h1>
+
+
+    </div>
+
+  </body>
+
+</html>

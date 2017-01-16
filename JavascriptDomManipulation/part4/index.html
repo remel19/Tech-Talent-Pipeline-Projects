@@ -1,0 +1,38 @@
+<!-- Create an HTML page with a form. The form should include inputs for a username, email, and password as well as a submit button.
+In a Javascript file, write code that does the following things:
+-checks that the password is 12345678
+-checks that the username contains at least one number
+-if anything is wrong, send an alert message saying "incorrect"
+Your page should also include an H1 tag. If the information in the form is correct, have Javascript change the text in the H1. -->
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>General Info</title>
+  </head>
+
+
+  <body onkeypress="keyPress()">
+
+    <h1 id="head">Please Fill in the empty box.</h1>
+    <form class="info" action="index.html" method="post" id="submit">
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+      <br>
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password">
+      <br>
+      <input type="submit" value="subimt">
+    </form>
+
+
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
