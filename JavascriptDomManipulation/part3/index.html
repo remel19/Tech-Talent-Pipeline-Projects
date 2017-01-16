@@ -1,0 +1,21 @@
+<!-- Create an HTML page with javascript that listens for a keypress.
+When the user presses that key, the text of the H1 should show the value of the key they have pressed.
+Example: If the user presses "J", the text inside the H1 should be "J".
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Heading</title>
+  </head>
+
+  <body onkeydown="change(event)">
+    <h1 id="head" style="position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);"></h1>
+    <script type="text/javascript" src = "script.js"></script>
+  </body>
+</html>

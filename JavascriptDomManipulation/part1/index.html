@@ -1,0 +1,38 @@
+<!-- Create an HTML page with two buttons that argue with each other. When one button is clicked, the text "I'm right" should be placed next to it. When the other button is clicked, the text is replaced with, "No, I'm right!" -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arguing Button</title>
+  </head>
+
+  <body>
+
+    <div style="position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);">
+
+      <button type="button" name="button" onclick="changeHb1()"
+      style="font-size: 16px;
+      margin: 5px;
+      padding: 10px;">Click me</button>
+
+      <h4 id="head"
+      style="text-align = center;
+      margin-left:5px;
+      font-weight: normal;"></h4>
+
+      <button type="button" name="button" onclick="changeHb2()"
+      style="font-size: 16px;
+      margin: 5px;
+      padding: 10px;">Click me</button>
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
