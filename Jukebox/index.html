@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
     <title>Jukebox</title>
+
   </head>
+
+
 
   <body>
 
-    <form action="index.html" method="post" id="frm">
-      <input type="text" placeholder="Enter the title" id="#track">
-      <input type="submit" value="search">
-    </form>
+    <div class="backgrnd">
+
+      <form action="index.html" method="post" id="frm">
+        <input type="text" placeholder="Enter the title" id="#track">
+        <br>
+        <input type="submit" value="search" id="sbm">
+      </form>
 
 
-    <div id="song">
+      <div id="song">
+
+      </div>
+
+
+      <ul class="listSong">
+
+      </ul>
+
+      <div class="btn">
+        <button type="button" name="previous" id="previous"><i class="fa fa-step-backward"></i></button>
+        <button type="button" name="stop" id="stop"><i class="fa fa-stop-circle-o"></i></button>
+        <button type="button" name="play" id="play"><i class="fa fa-play-circle-o"></i></button>
+        <button type="button" name="pause" id="pause"><i class="fa fa-pause-circle-o"></i></button>
+        <button type="button" name="next" id="next"><i class="fa fa-step-forward"></i></button>
+      </div>
+
+      <script type="text/javascript" src = "script/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src = "script/script.js"></script>
 
     </div>
-
-
-    <ul class="listSong">
-
-    </ul>
-
-
-    <button type="button" name="play" id="play">play</button>
-    <button type="button" name="pause" id="pause">pause</button>
-    <button type="button" name="stop" id="stop">stop</button>
-    <button type="button" name="next" id="next">Play Next</button>
-    <button type="button" name="previous" id="previous">Play Previous</button>
-    <script type="text/javascript" src = "script/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src = "script/script.js"></script>
 
   </body>
 </html>
