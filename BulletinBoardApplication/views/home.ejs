@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+
+  <body>
+
+    <div class="conatiner">
+        <h1 class="centerH">Message Board</h1>
+      <div class="nav-bar1">
+        <a href="#">Home</a>
+      </div>
+      <div class="nav-bar2">
+        <a href="/posts">Bulletin Board</a>
+      </div>
+
+      <div class="box">
+        <h2>Post your messages bellow</h2>
+
+        <form id="postMsg" action="/" method="post">
+          <label for="title">Title:</label>
+          <input type="text" name="title" id="title" placeholder="Title"><br><br>
+          <textarea name="body" rows="10" cols="50" id="body" placeholder="Write something here"></textarea><br>
+          <input type="submit" value="Post">
+        </form>
+      </div>
+
+      <div class="box">
+        <ul>
+          <% for (var i =0; i<data.length; i++) {%>
+            <li><a href=<%="/post/"+data[i].id%>><%= data[i].title %></a>
+              <a href=<%="/delete/post/"+data[i].id%>><i class="fa fa-trash"></i></a>
+            </li>
+            <br>
+          <% } %>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </body>
+
+
+</html>

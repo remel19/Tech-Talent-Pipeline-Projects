@@ -1,0 +1,91 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0 100px;
+  background-color: #ECEFF1;
+}
+
+.box{
+  width: 50%;
+  float: left;
+}
+
+.nav-bar1{
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  background-color: #006064;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 12px;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  border-radius: 10px 10px 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-bar2{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-color: #006064;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 12px;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  border-radius: 10px 10px 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.nav-bar1 a{
+  color: white;
+}
+
+.nav-bar2 a{
+  color: white;
+}
+
+.centerH{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+.deleteIcon{
+  float: right;
+}
+
+.tip{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: -50px;
+    position: absolute;
+}
+
+.deleteIcon:hover .tip{
+  visibility: visible;
+}

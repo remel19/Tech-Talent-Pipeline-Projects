@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulletin Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1 class="centerH">Messages</h1>
+      <div class="nav-bar1">
+        <a href="/">Home</a>
+      </div>
+      <div class="nav-bar2">
+        <a href="#">Bulletin Board</a>
+      </div>
+
+
+      <% for (var i =0; i<data.length; i++) {%>
+        <div>
+          <h2 class="center"><a href=<%="/post/"+data[i].id%>><%= data[i].title %></a></h2>
+          <p><%= data[i].body %>
+          <span class="deleteIcon"><a href=<%="/delete/post/"+data[i].id%>>
+            <i class="fa fa-trash" class="tab"></i>
+            <span class="tip">Delete Post</span></a>
+          </span>
+        </p>
+        </div>
+        <hr>
+      <% } %>
+
+
+    </div>
+
+
+  </body>
+
+
+
+</html>

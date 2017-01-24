@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= data[0].title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="nav-bar1">
+        <a href="/">Home</a>
+      </div>
+      <div class="nav-bar2">
+        <a href="/posts">Bulletin Board</a>
+      </div>
+
+      <h1 class="centerH"><%= data[0].title %></h1>
+      <p><%= data[0].body %>
+        <span class="deleteIcon"><a href=<%="/delete/post/"+data[0].id%>>
+          <i class="fa fa-trash" class="tab"></i>
+          <span class="tip">Delete Post</span></a>
+        </span>
+      </p>
+
+    </div>
+  </body>
+
+</html>
