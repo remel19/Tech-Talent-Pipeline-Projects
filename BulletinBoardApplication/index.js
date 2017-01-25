@@ -65,11 +65,23 @@ app.get('/post/:id', function(req,res){
 })
 
 //deletes the post and returns to home page
-app.get('/delete/post/:id', function(req, res){
+app.get('/delete/:id', function(req, res){
   pg.connect(Database, function(err,client,done){
     var post_id = req.params.id;
     client.query(`delete from messages where id ='${post_id}'`, function(err,result){
       res.redirect('/');
+      done();
+      pg.end();
+    })
+  })
+})
+
+//deletes the post and returns to bulletinboard
+app.get('/delete/post/:id', function(req, res){
+  pg.connect(Database, function(err,client,done){
+    var post_id = req.params.id;
+    client.query(`delete from messages where id ='${post_id}'`, function(err,result){
+      res.redirect('/posts');
       done();
       pg.end();
     })

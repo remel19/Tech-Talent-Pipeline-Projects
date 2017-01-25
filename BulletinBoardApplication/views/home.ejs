@@ -35,7 +35,7 @@
         <ul>
           <% for (var i =0; i<data.length; i++) {%>
             <li><a href=<%="/post/"+data[i].id%>><%= data[i].title %></a>
-              <a href=<%="/delete/post/"+data[i].id%>><i class="fa fa-trash"></i></a>
+              <a href=<%="/delete/"+data[i].id%>><i class="fa fa-trash"></i></a>
             </li>
             <br>
           <% } %>
