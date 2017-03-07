@@ -55,3 +55,12 @@ li{
 li:hover{
   text-decoration: underline;
 }
+
+@media screen and (max-width: 700px) {
+  #play{
+    font-size: 24px;
+  }
+  button{
+    font-size: 16px;
+  }
+}
