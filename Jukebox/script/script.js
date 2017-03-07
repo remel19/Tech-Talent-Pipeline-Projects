@@ -29,7 +29,15 @@ $("#frm").submit(function(event) { // immediate function which acts when search 
 
       var trk = document.getElementById(audioId); //getting the last audio tag that was added to the div with id = 'song'
       myplayList.push(trk); // adding that song to myplayList
-
+      i = 0;
+      while(i < myplayList.length){ // loop to check which song is on and turns it off.
+          myplayList[i].pause();
+          myplayList[i].currentTime = 0;
+          i++;
+      }
+      myplayList[songIndex].play(); //playing the clicked song
+      currentTrack = songIndex;
+      trk.play();
       // adds the li tag, audio tag, id, and src to unorderedList(ul). Every new song search will update the unorderedList(ul) with a new ListItem(li) of that search song.
       $("ul").append("<li onclick=\"listPlay(" + songIndex + ")\"" + "><audio src='" + audioSrc + "'" + "></audio>" + track +"</li>");
 
