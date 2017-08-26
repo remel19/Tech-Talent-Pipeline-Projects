@@ -17,7 +17,8 @@ ________________________________________________________________________________
 ### Project Descriptions:
 #### BulletinBoardApplication
 * It's a full-stack application that uses Nodej.js, express for routing and postgress to store data.
-* User can post and delete articles
+* User can post any articles for anyone to see.
+* This project is hosted on Heroku. Display of Bulletin Board: [Bulletin Board](https://infinite-sierra-81270.herokuapp.com/)
 
 #### JSMiniChallenge
 * The purpose of this project was to write a basic simple javaScript code to understand javaScript better.
