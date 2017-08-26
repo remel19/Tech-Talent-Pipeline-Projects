@@ -27,9 +27,12 @@ ________________________________________________________________________________
 
 #### Jukebox
 * Using jQuery, Ajax makes request to spotify API, gets data as a json file and renders data.
-* Saves the track file in a volatile memory till page is refreshed
+* Saves the track file in a volatile memory till page is refreshed.
 * User can play, pause, restart, stop, go to next track and go to previous track.
-* javaScript Object-Oriented programming implemented
+* javaScript Object-Oriented programming implemented.
+* **Note: Unfortunately the spotify API doesn't return any result, Spotify stopped providing free sample of tracks(last checked: 08/26/2017).**
+* Display of Jukebox: [Jukebox](https://remel19.github.io/Tech-Talent-Pipeline-Projects/Jukebox/)
+
 
 #### Cubes
 * It's a four color cubed that is centered to the page and responsive according to size of the screen.
